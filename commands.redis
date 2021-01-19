@@ -1,0 +1,8 @@
+FT.CREATE idx:nodes
+ON hash PREFIX 1 "n:"
+SCHEMA first_name TEXT
+last_name TEXT
+sex TAG SORTABLE
+age NUMERIC SORTABLE
+city TAG SORTABLE
+rels TAG SORTABLE

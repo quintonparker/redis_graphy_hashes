@@ -1,0 +1,26 @@
+This is a Mock CDR use-case
+
+Outline / Components of the demo
+
+1. Redis Insights
+2. Docker
+3. Codebase
+4. Redis CLI
+
+Step 1
+
+1. Launch docker-compose
+2. Generators
+2.1 What are these doing?
+2.2. Visualize in Redis Insights
+3. Hash Workers
+3.2 What are these doing?
+3.3 What is a hash?
+3.4 Example HGETALL
+3.5 Cool but what about secondary lookups?
+4. Apply Redisearch indices
+4.1 What just happened?
+4.2 FT.INFO
+4.3 Example search queries
+4.3 Example search aggregations
+4.4 But search aggregations all in-memory? What if I have a lot of data?

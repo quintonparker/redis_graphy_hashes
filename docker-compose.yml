@@ -1,0 +1,18 @@
+version: "3.7"
+
+services:
+    node_generator:
+        build: .
+        image: graphy_hashes:latest
+        command: ['python', '-u', 'node_generator.py', '1000000','20', '40']
+        restart: unless-stopped
+        volumes:
+            - ./:/app
+        environment:
+            REDIS_URL: redis://redismod:6379/
+        depends_on:
+            - redismod
+    redismod:
+        image: redislabs/redismod:latest
+        ports:
+            - 6379:6379
