@@ -16,4 +16,4 @@ $ docker-compose up
 
 1. You'll notice node_generator.py will be generating up to 1M hash keys
 2. At any point in time you may apply the search schema syntax found in commands.redis
-3. Optional. Download [RedisInsight](https://redislabs.com/redis-enterprise/redis-insight/) to browse the database and perform search queries
+3. Optional. Download [RedisInsight](https://redislabs.com/redis-enterprise/redis-insight/) to browse the database (localhost:6379) and perform search queries
