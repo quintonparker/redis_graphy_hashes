@@ -3,9 +3,6 @@
 This demo combines [Redis](https://redis.io) hash data structures and [Redisearch](https://oss.redislabs.com/redisearch/)
 to generate "people" hashes and create a search index to represent a sort of flattened social network graph.
 
-## Architecture
-![Architecture](/architecture.png)
-
 ## Requirements
 Docker
 
