@@ -14,6 +14,11 @@ $ cd redis_graphy_hashes
 $ docker-compose up
 ```
 
-1. You'll notice node_generator.py will be generating up to 1M hash keys
-2. At any point in time you may apply the search schema syntax found in commands.redis
-3. Optional. Download [RedisInsight](https://redislabs.com/redis-enterprise/redis-insight/) to browse the database (localhost:6379) and perform search queries
+1. You'll notice node_generator.py will be generating up to 1M hash keys 
+2. Download [RedisInsight](https://redislabs.com/redis-enterprise/redis-insight/) GUI client to connect to the Redis database (127.0.0.1:6379)
+3. Create the search index by copy/paste the `FT.CREATE` command found in `commands.redis` file using RedisInsight's CLI feature. See https://github.com/quintonparker/redis_graphy_hashes/blob/main/screenshot-create-schema.png
+4. Redisearch is now creating the search index in the background. Run `FT.INFO idx:nodes` to inspect the schema metadata. `num_docs` will indicate indexing progress.
+5. Run some search queries! See https://github.com/quintonparker/redis_graphy_hashes/blob/main/screenshot-run-queries.png
+
+
+
