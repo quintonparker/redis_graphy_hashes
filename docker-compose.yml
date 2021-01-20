@@ -5,7 +5,7 @@ services:
         build: .
         image: graphy_hashes:latest
         command: ['python', '-u', 'node_generator.py', '1000000','20', '40']
-        restart: no
+        restart: "no"
         volumes:
             - ./:/app
         environment:
